@@ -10,6 +10,7 @@ public class Warmup1 {
 		System.out.println("Method notString: " + w.notString("x"));
 		System.out.println("Method front22: " + w.front22("kitten"));
 		System.out.println("Method sumDouble: " + w.sumDouble(3, 3));
+		System.out.println("lol :D"));
 	}
 
 	public boolean sleepIn(boolean weekday, boolean vacation) {
@@ -19,13 +20,13 @@ public class Warmup1 {
 		return !weekday || vacation;
 	}// end of sleepIn
 
-	// 1. Etteantud sınast vahetada ‰ra esimene ja viimane t‰ht
+	// 1. Etteantud s√µnast vahetada √§ra esimene ja viimane t√§ht
 	public String frontBack(String str) {
 		if (str.length() < 2) {
 			return str;
 		}
 		return lastLetter(str) + str.substring(1, str.length() - 1) + firstLetter(str);
-		// samav‰‰rne oleks teha ilma abimeetoditeta ehk
+		// samav√§√§rne oleks teha ilma abimeetoditeta ehk
 		// return str.substring(str.length()-1) + str.substring(1, str.length()
 		// - 1) + str.substring(0, 1);
 	}
