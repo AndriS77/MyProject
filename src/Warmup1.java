@@ -10,7 +10,7 @@ public class Warmup1 {
 		System.out.println("Method notString: " + w.notString("x"));
 		System.out.println("Method front22: " + w.front22("kitten"));
 		System.out.println("Method sumDouble: " + w.sumDouble(3, 3));
-		System.out.println("lol :D"));
+		System.out.println("lol :D");
 	}
 
 	public boolean sleepIn(boolean weekday, boolean vacation) {
