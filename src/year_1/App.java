@@ -1,3 +1,4 @@
+package year_1;
 import java.awt.image.AreaAveragingScaleFilter;
 import java.util.Arrays;
 
@@ -9,14 +10,14 @@ public class App {
 		System.out.println("test");
 		System.out.println(appObject.generateHtmlElement("h1", "Suur pealkiri") + "\n");
 		double[] temperature = { 4, 7, 9, 5, 9 };
-		//String Array1[] = { "null", "üks", "kaks", "kolm", "neli", "viis", "kuus", "seitse", "kaheksa", "üheksa",
-			//	"kümme" };
+		//String Array1[] = { "null", "Ã¼ks", "kaks", "kolm", "neli", "viis", "kuus", "seitse", "kaheksa", "Ã¼heksa",
+			//	"kÃ¼mme" };
 		System.out.println("keskmine temperatuur: " + appObject.averageTemp(temperature));
 		System.out.println("massivi otsitav number: " + appObject.numberList(2) + "\n");
 		int[] arrayInts = { 2, 3, 4 };
 		System.out.println(Arrays.toString(arrayInts));
 		int firstNum = arrayInts[0];
-		System.out.println("esimene väärtus on: " + firstNum);
+		System.out.println("esimene vÃ¤Ã¤rtus on: " + firstNum);
 		arrayInts[0] = 7;
 		System.out.println("muutunud massiv on: " + Arrays.toString(arrayInts));
 
@@ -38,7 +39,7 @@ public class App {
 		}
 	}
 
-	// Ülesanne: tervita kasutajat, tervitusteksti saad ise valida. Kasutajale
+	// Ãœlesanne: tervita kasutajat, tervitusteksti saad ise valida. Kasutajale
 	// nime
 	// saad parameetrina
 	private String sayHello(String name) {
@@ -47,9 +48,9 @@ public class App {
 	}
 
 	/*
-	 * antakse ette HTMLi element ja tagi nimetus-mõlemad võivad olla sõnelised
-	 * väärtused. Väljastatakse HTML teksti kujul. (nt generateHtmlElement(“h1”,
-	 * “Suur pealkiri”) -> “<h1>Suur pealkiri</h1>”
+	 * antakse ette HTMLi element ja tagi nimetus-mÃµlemad vÃµivad olla sÃµnelised
+	 * vÃ¤Ã¤rtused. VÃ¤ljastatakse HTML teksti kujul. (nt generateHtmlElement(â€œh1â€�,
+	 * â€œSuur pealkiriâ€�) -> â€œ<h1>Suur pealkiri</h1>â€�
 	 */
 	private String generateHtmlElement(String tag, String value) {
 		String firstTag = "<" + tag + ">";
@@ -61,9 +62,9 @@ public class App {
 	}
 
 	/*
-	 * Meetod, mis võtab sisendiks massiivi, tagastab arvulise väärtuse.
-	 * Ülesanne: etteantud nädala temperatuurid, avutada keskmine temperatuur
-	 * sel nädalal.
+	 * Meetod, mis vÃµtab sisendiks massiivi, tagastab arvulise vÃ¤Ã¤rtuse.
+	 * Ãœlesanne: etteantud nÃ¤dala temperatuurid, avutada keskmine temperatuur
+	 * sel nÃ¤dalal.
 	 */
 	private double averageTemp(double[] temp) {
 		double sum = 0;
@@ -73,12 +74,12 @@ public class App {
 
 		return sum / temp.length;
 	}
-	// Meetod, mis võtab sisendiks numbri (0-10). Väljundiks selle numbri
-	// sõnaline tähenduse. nt meetodiNimi(2) -> “kaks”
+	// Meetod, mis vÃµtab sisendiks numbri (0-10). VÃ¤ljundiks selle numbri
+	// sÃµnaline tÃ¤henduse. nt meetodiNimi(2) -> â€œkaksâ€�
 
 	private String numberList(int number) {
-		String numbers[] = { "null", "üks", "kaks", "kolm", "neli", "viis", "kuus", "seitse", "kaheksa", "üheksa",
-		"kümme" };
+		String numbers[] = { "null", "Ã¼ks", "kaks", "kolm", "neli", "viis", "kuus", "seitse", "kaheksa", "Ã¼heksa",
+		"kÃ¼mme" };
 
 
 		return numbers[number];
@@ -86,11 +87,11 @@ public class App {
 		// appObject.sayHello("David") + "\n");
 
 		// System.out.println("generateHtmlElement() result: " +
-		// appObject.generateHtmlElement("h4", "Väiksem pealkiri"));
+		// appObject.generateHtmlElement("h4", "VÃ¤iksem pealkiri"));
 	}
 
-	// generateHtmlElement(“h1”, “This is a Heading”) -> “<h1>This is a
-	// Heading</h1>”
+	// generateHtmlElement(â€œh1â€�, â€œThis is a Headingâ€�) -> â€œ<h1>This is a
+	// Heading</h1>â€�
 	/*private String generateHtmlElement(String tag, String value) {
 		// 1. variant
 		// return "<" + tag + ">" + value + "</" + tag + ">";
@@ -111,12 +112,12 @@ public class App {
 		case 0:
 			return "null";
 		case 1:
-			return "üks";
+			return "Ã¼ks";
 		default:
 			throw new IllegalArgumentException("Number peaks olema vahemikus 0 kuni 9");
 		}
 	}
-	// Etteantud nädala(või muu periood) temperatuurid, avutada keskmine
-	// temperatuur sel nädalal.*/
+	// Etteantud nÃ¤dala(vÃµi muu periood) temperatuurid, avutada keskmine
+	// temperatuur sel nÃ¤dalal.*/
 
 }
