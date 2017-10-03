@@ -1,5 +1,7 @@
 package year_2;
  import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class HelloWorld {
 
@@ -75,7 +77,15 @@ public class HelloWorld {
 	
 	private String intToWord(int number ) {
 		String[] numbers = { "null", "üks", "kaks", "kolm", "neli", "viis", "kuus", "seitse", "kaheksa", "üheksa", "kümme"};
-	/*	switch (number) {
+		Map<Integer, String> numbers = new HashMap<Integer, String()>;
+		numbers.put(0,"null");
+		numbers.put(1,"");
+		numbers.put(2,"kaks");
+		numbers.put(3,"kolm");
+		numbers.put(4,"");
+		
+		
+		/*	switch (number) {
 		case 0:
 			return "null";
 		case 1:
