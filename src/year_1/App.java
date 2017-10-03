@@ -1,3 +1,4 @@
+package year_1;
 import java.awt.image.AreaAveragingScaleFilter;
 import java.util.Arrays;
 
