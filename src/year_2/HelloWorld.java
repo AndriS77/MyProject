@@ -13,7 +13,7 @@ public class HelloWorld {
 		double[] temperature = { 4, 7, 9, 5, 9 };
 
 		System.out.println("keskmine temperatuur: " + helloWorldObject.averageTemp(temperature));
-		System.out.println("massivi otsitav number: " + helloWorldObject.intToWord (2)+ "\n" );
+		System.out.println("massivi otsitav number: " + helloWorldObject.intToWord (4)+ "\n" );
 		int[] arrayInts = { 2, 3, 4 };
 		System.out.println(Arrays.toString(arrayInts));
 		int firstNum = arrayInts[0];
@@ -76,29 +76,52 @@ public class HelloWorld {
 	
 	
 	private String intToWord(int number ) {
-		String[] numbers = { "null", "üks", "kaks", "kolm", "neli", "viis", "kuus", "seitse", "kaheksa", "üheksa", "kümme"};
-		Map<Integer, String> numbers = new HashMap<Integer, String()>;
-		numbers.put(0,"null");
-		numbers.put(1,"");
-		numbers.put(2,"kaks");
-		numbers.put(3,"kolm");
-		numbers.put(4,"");
-		
-		
-		/*	switch (number) {
+//		// kolmas variant
+//		Map<Integer, String> numbers = new HashMap<Integer, String>();
+//		numbers.put(0,"null");
+//		numbers.put(1,"üks");
+//		numbers.put(2,"kaks");
+//		numbers.put(3,"kolm");
+//		numbers.put(4,"neli");
+//		numbers.put(5, "viis");
+//		numbers.put(6, "kuus");
+//		numbers.put(7, "seitse");
+//		numbers.put(8, "kaheksa");
+//		numbers.put(9, "üheksa");
+//		
+//		return numbers.get(number) ;
+//		
+		//teine variant
+//	String[] numberStrings = { "null", "üks", "kaks", "kolm", "neli", "viis", "kuus", "seitse", "kaheksa", "üheksa", "kümme"};
+			switch (number) {
 		case 0:
 			return "null";
 		case 1:
 			return "üks";
 		case 2:
 			return "kaks";
+		case 3:
+			return "kolm";
+		case 4:
+			return "yksteist";
+		case 5:
+			return "viis";
+		case 6:
+			return "kuus";
+		case 7:
+			return "seitse";
+		case 8:
+			return "kaheksa";
+		case 9:
+			return "üheksa";
 		default:
 			throw new IllegalArgumentException("Number should be in range 0 to 9 ");
-		}*/
-		if (number < 0 || number > 9 ) { 
-			throw new IllegalArgumentException("Number should be in range 0 to 9 ");
-			//Erind
 		}
-		return numbers[number];
+//		if (number < 0 || number > 9 ) { 
+//			throw new IllegalArgumentException("Number should be in range 0 to 9 ");
+//			//Erind
+//		}
+		//esimene variant
+//		return numbers[number];
 	}
 }
