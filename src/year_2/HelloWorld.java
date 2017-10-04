@@ -92,7 +92,6 @@ public class HelloWorld {
 //		return numbers.get(number) ;
 //		
 		//teine variant
-//	String[] numberStrings = { "null", "üks", "kaks", "kolm", "neli", "viis", "kuus", "seitse", "kaheksa", "üheksa", "kümme"};
 			switch (number) {
 		case 0:
 			return "null";
@@ -122,6 +121,8 @@ public class HelloWorld {
 //			//Erind
 //		}
 		//esimene variant
+//	String[] numberStrings = { "null", "üks", "kaks", "kolm", "neli", "viis", "kuus", "seitse", "kaheksa", "üheksa", "kümme"};
 //		return numbers[number];
+			
 	}
 }
