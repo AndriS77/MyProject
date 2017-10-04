@@ -24,3 +24,4 @@ System.out.println("Hinne on: " + kodutooObject.valueGrade(3));
 		}
 	}
 }
+ 
