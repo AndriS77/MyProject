@@ -23,6 +23,4 @@ System.out.println("Hinne on: " + kodutooObject.valueGrade(3));
 			throw new IllegalArgumentException("Hindamine toimub 5-palli süstemis");
 		}
 	}
-	
 }
- 
