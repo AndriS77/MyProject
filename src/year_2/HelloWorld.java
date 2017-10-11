@@ -2,6 +2,7 @@ package year_2;
  import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 public class HelloWorld {
 
@@ -14,6 +15,7 @@ public class HelloWorld {
 
 		System.out.println("keskmine temperatuur: " + helloWorldObject.averageTemp(temperature));
 		System.out.println("massivi otsitav number: " + helloWorldObject.intToWord (4)+ "\n" );
+		System.out.println("suvaline nimi:" + helloWorldObject.randomName("F") + "\n");
 		int[] arrayInts = { 2, 3, 4 };
 		System.out.println(Arrays.toString(arrayInts));
 		int firstNum = arrayInts[0];
@@ -125,4 +127,28 @@ public class HelloWorld {
 //		return numbers[number];
 			
 	}
-}
+	 public String randomName(String sex) {
+	        Random random = new Random();
+	        String[] firstNameF = {"Maie", "Aet", "Tiiu"};
+	        String[] firstNameM = {"Koit","Ivo","Mait"};
+	        String[] surName = {"Toome", "Nei", "Urb", "Kass", "Kuusk", "Redis"};
+	        int firsta = random.nextInt(firstNameF.length - 1);
+	        int firstb = random.nextInt(firstNameM.length - 1);
+	        int surindex = random.nextInt(surName.length - 1);
+//	        return firstName[firstindex] + " " + surName[surindex];
+	        if (sex.equals("F")) {
+	            return firstNameF[firsta] + " " + surName[surindex];
+	        } else if (sex.equals("F")) { 
+	            return firstNameF[firsta] + " " + surName[surindex];
+	        } else if (sex.equals("F")) {
+	            return firstNameF[firsta] + " " + surName[surindex];
+	        } else if (sex.equals("M")){
+	            return firstNameM[firstb] + " " + surName[surindex];
+	        } else if (sex.equals("M")){
+	            return firstNameM[firstb] + " " + surName[surindex];
+	        } else if (sex.equals("M")){
+	            return firstNameM[firstb] + " " + surName[surindex];
+	        } else {
+	            return "Select sex!";
+	        }
+}}
