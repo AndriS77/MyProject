@@ -75,9 +75,9 @@ public class Warmup1 {
 		return sum;
 	}
 
-	public String front3(String str) {
+/*	public String front3(String str) {
 		String  front;
 if(str.length()>=3) { 
-	return 
-}
+	return ;
+}*/
 }

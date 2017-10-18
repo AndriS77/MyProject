@@ -108,5 +108,4 @@ public class Kordamine1 {
 		result[2]=nums[0];
 		return result;
 	}
-	public String getAverageChars(String array ,Char){
 }
