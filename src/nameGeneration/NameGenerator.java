@@ -16,9 +16,9 @@ public class NameGenerator {
 		NameGenerator nameGeneratorObject = new NameGenerator();
 		// System.out.println(nameGeneratorObject.getRandomFirstName(true));
 		// System.out.println(nameGeneratorObject.getRandomLastName());
-		System.out.println(nameGeneratorObject.getRandomFullName() + "\n");
+//		System.out.println(nameGeneratorObject.getRandomFullName() + "\n");
 		// System.out.println(nameGeneratorObject.generateRandomString(6));
-		// System.out.println(nameGeneratorObject.generateRandomNumberBetween(3, 7));
+		 System.out.println(nameGeneratorObject.generateRandomNumberBetween(10, 12));
 		// System.out.println(nameGeneratorObject.flipPenny() + "\n");
 		// System.out.println(nameGeneratorObject.generateRandomName(5));
 		// System.out.println(nameGeneratorObject.personData());
@@ -96,7 +96,8 @@ public class NameGenerator {
 	}
 
 	public Integer generateRandomNumberBetween(int beg, int end) {
-		return beg + (int) (Math.random() * +end);
+//		return beg + (int) (Math.random() * +end);
+		return (int)(Math.random() * ((end-beg)+1)+ beg);
 	}
 
 	public boolean flipPenny() {
