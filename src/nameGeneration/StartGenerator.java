@@ -5,7 +5,7 @@ import java.util.Random;
 public class StartGenerator {
 	public static void main(String[] args) {
 		NameGenerator ng = new NameGenerator();
-		System.out.println("Juhuslik eesnimi: " + ng.getRandomFirstName("meestenimed palun"));
+		//System.out.println("Juhuslik eesnimi: " + ng.getRandomFirstName("meestenimed palun"));
 		
 		
 		//Random demo

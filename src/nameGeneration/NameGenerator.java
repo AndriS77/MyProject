@@ -108,7 +108,7 @@ public class NameGenerator {
 		} else {
 			return false;
 		}
-		// return random.nextBoolean(); -> 50/50 - true/false
+		// return random.nextBoolean(); -> 50/50 - true/false 
 	}
 
 	// Meetod, mis annab massiivi/listi inimeste nimedest. Parameetrina anda ette
