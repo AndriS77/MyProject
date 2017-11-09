@@ -3,6 +3,7 @@ package nameGeneration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
@@ -14,15 +15,15 @@ public class NameGenerator {
 		// }
 		//
 		NameGenerator nameGeneratorObject = new NameGenerator();
-		// System.out.println(nameGeneratorObject.getRandomFirstName(true));
-		// System.out.println(nameGeneratorObject.getRandomLastName());
-//		System.out.println(nameGeneratorObject.getRandomFullName() + "\n");
-		// System.out.println(nameGeneratorObject.generateRandomString(6));
-		 System.out.println(nameGeneratorObject.generateRandomNumberBetween(10, 12));
-		// System.out.println(nameGeneratorObject.flipPenny() + "\n");
-		// System.out.println(nameGeneratorObject.generateRandomName(5));
-		// System.out.println(nameGeneratorObject.personData());
-		// System.out.println(nameGeneratorObject.randomNameFromArray(firstNames));
+		System.out.println(nameGeneratorObject.getRandomFirstName(true));
+		System.out.println(nameGeneratorObject.getRandomLastName());
+		System.out.println(nameGeneratorObject.getRandomFullName() + "\n");
+		System.out.println(nameGeneratorObject.generateRandomString(6));
+		System.out.println(nameGeneratorObject.generateRandomNumberBetween(10, 12));
+		System.out.println(nameGeneratorObject.flipPenny() + "\n");
+		System.out.println(nameGeneratorObject.generaterandomName(5));
+		System.out.println(nameGeneratorObject.personData(2));
+		System.out.println(nameGeneratorObject.randomNameFromArray(firstNames));
 	}
 
 	static String[] firstNames = { "Kati", "Mati", "Jaanus", "Peeter", "Mari" };
@@ -33,6 +34,7 @@ public class NameGenerator {
 			't', 'u', 'v', 'w', 'x', 'y', 'z' };
 	int[] numbers = { 67, 4, 89, 2, 5, 1, 8, 42, 5, 90, 34, 88, 3 };
 	String[] names = { "Maie", "Tiit", "Koit", "Aet", "Tiiu", "Ain" };
+	int[] testArray = { 6, 1, 3, 4, 6 };
 
 	Random random = new Random();
 
@@ -96,50 +98,72 @@ public class NameGenerator {
 	}
 
 	public Integer generateRandomNumberBetween(int beg, int end) {
-//		return beg + (int) (Math.random() * +end);
-		return (int)(Math.random() * ((end-beg)+1)+ beg);
+		// return beg + (int) (Math.random() * +end);
+		return (int) (Math.random() * ((end - beg) + 1) + beg);
 	}
 
 	public boolean flipPenny() {
 
 		// TODO Refactor
+<<<<<<< HEAD
 		if (Math.random() < 0.5) {
 			return true;
 		} else {
 			return false;
 		}
 		// return random.nextBoolean(); -> 50/50 - true/false 
+=======
+		// return random.nextBoolean(); -> 50/50 - true/false
+		return Math.random() < 0.5;
+>>>>>>> branch 'master' of https://github.com/AndriS77/MyProject.git
 	}
 
-	// Meetod, mis annab massiivi/listi inimeste nimedest. Parameetrina anda ette
+	// Meetod, mis annab massiivi/listi inimeste nimedest. Parameetrina anda
+	// ette
 	// inimeste hulk.
-	public String generateRandomName(int nameNum) { // TODO
-		// String[] names = new String[6];
-		String randomName = "";
+	/*
+	 * public String generateRandomName(String[]string, int nameNum) { // TODO
+	 * //String[] names = new String[6]; /*String randomName = ""; for (int i =
+	 * 0; i < nameNum; i++) { randomName +=
+	 * String.valueOf((names)[random.nextInt(nameNum)]); }
+	 * 
+	 * return randomName;
+	 */
+	public List<String> generaterandomName(int nameNum) {
+		List<String> names = new ArrayList<>();
+		List<String> firstNames = new ArrayList<>(Arrays.asList("Kati", "Mati", "Jaanus", "Peeter", "Mari"));
 		for (int i = 0; i < nameNum; i++) {
-			randomName += String.valueOf((names)[random.nextInt(nameNum)]);
+			names.add(firstNames.get(random.nextInt(firstNames.size())));
 		}
-		return randomName;
-
+		return names;
 	}
+
+	/*
+	 * public HashMap<String, Integer> personData(int personNum) { // String[]
+	 * firstName = { "Aet", "Koit", "Tiiu", "Mait", "Maie", "Reet" }; Random
+	 * random = new Random(); HashMap<String, Integer> names = new HashMap<>();
+	 * names.put("Aet", random.nextInt(99)); names.put("Koit",
+	 * random.nextInt(99)); names.put("Tiiu", random.nextInt(99)); // int aindex
+	 * = random.nextInt(age.length - 1); // int s =
+	 * random.nextInt(surName.length - 1); for (int i = 0; i < names.size();
+	 * i++) { names.get(random.nextInt(names.size()));
+	 * 
+	 * } return names;
+	 */
 
 	public HashMap<String, Integer> personData(int personNum) {
-		// String[] firstName = { "Aet", "Koit", "Tiiu", "Mait", "Maie", "Reet" };
-		// int[] age = { 7, 16, 41, 75, 33, 55, 27 };
-		// String[] surName = {"Toome", "Nei", "Urb", "Kass", "Kuusk", "Redis"};
-		Random random = new Random();
-		Map<String, String> names = new HashMap<String, String>();
-		names.put("Aet", "aindex");
-		names.put("Koit", "aindex");
-		names.put("Tiiu", "aindex");
-		names.put("Mait", "aindex");
-		// int aindex = random.nextInt(age.length - 1);
-		// int s = random.nextInt(surName.length - 1);
-		return null;
+		HashMap<String, Integer> names = new HashMap<>();
+		List<String> givenNames = new ArrayList<>(Arrays.asList("Aet", "Koit", "Tiiu", "Mait", "Maie"));
 
-		// return names.get(names + " " + age[aindex]);
+		for (int i = 0; i < personNum; i++) {
+			names.put(givenNames.get(random.nextInt(givenNames.size())), random.nextInt(99));
+
+		}
+
+		return names;
 	}
 	// TODO koodi kordus random.nextInt(firstNamesF.length),
 	// random.nextInt(firstNamesM.length)
 	// TODO lastNames koondada kahest eelnevast massiivist
+
 }
