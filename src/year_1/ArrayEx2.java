@@ -1,4 +1,5 @@
- package year_1;
+package year_1;
+
 import java.util.Arrays;
 
 public class ArrayEx2 {
@@ -6,13 +7,17 @@ public class ArrayEx2 {
 	public static void main(String[] args) {
 		ArrayEx2 ae = new ArrayEx2();
 		int[] testArray = { 6, 2, 3, 4, 6 };
-		int[] testArray1 = { 9, 4, 8, 7 };
-		String[] testArray2 = {"hot","five","on","horror"};
+		int[] testArray1 = { 5, 1, 3, 4, 8 };
+		String[] testArray2 = { "hot", "five", "on", "horror" };
 		System.out.println(ae.firstLast6(testArray));
 		System.out.println(ae.commonEnd(testArray, testArray1));
 		System.out.println(Arrays.toString(ae.reverse3(new int[] { 6, 4, 8, 11, 56 })));
 		System.out.println(ae.minElements(testArray));
 		System.out.println(ae.findLongestString(testArray2));
+		System.out.println(Arrays.toString(ae.swapEnds(testArray1)));
+		System.out.println(Arrays.toString(ae.rotateLeft3(testArray1)));
+		System.out.println(ae.unlucky1(testArray1));
+		System.out.println(ae.countEvens(testArray1));
 	}
 
 	private static char[] ArraysToString(int[] reverse3) {
@@ -65,18 +70,50 @@ public class ArrayEx2 {
 		}
 		return min;
 	}
-	//4. Pikima sõna leidmine sõnu hoidvast massiivist.
-	public String findLongestString(String[] Strings){
-		int result=0;
+
+	// 4. Pikima sõna leidmine sõnu hoidvast massiivist.
+	public String findLongestString(String[] Strings) {
+		int result = 0;
 		String longest = Strings[0];
 		for (int i = 0; i < Strings.length; i++) {
-			if(Strings[i].length()>longest.length())
-		  {
-				longest=Strings[i];
-				result=i;
-		  }
-			
+			if (Strings[i].length() > longest.length()) {
+				longest = Strings[i];
+				result = i;
+			}
+
 		}
 		return Strings[result];
+	}
+
+	public int[] swapEnds(int[] nums) {
+		int f = nums[0];
+		nums[0] = nums[nums.length - 1];
+		nums[nums.length - 1] = f;
+		return nums;
+	}
+
+	public int[] rotateLeft3(int[] nums) {
+		return new int[] { nums[1], nums[2], nums[0] };
+	}
+
+	public boolean unlucky1(int[] nums) {
+		if (nums.length >= 2) {
+			if ((nums[0] == 1 && nums[1] == 3) || (nums[1] == 1 && nums[2] == 3)
+					|| (nums[nums.length - 2] == 1 && nums[nums.length - 1] == 3)) {
+				return true;
+			}
+			return false;
+		} else {
+			return false;
+
+		}
+	}
+
+	public int countEvens(int[] nums) {
+		int count = 0;
+		for (int i = 0; i < nums.length; i++)
+			if (nums[i] % 2 == 0)
+				count++;
+		return count;
 	}
 }
