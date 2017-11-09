@@ -105,17 +105,17 @@ public class NameGenerator {
 	public boolean flipPenny() {
 
 		// TODO Refactor
-<<<<<<< HEAD
-		if (Math.random() < 0.5) {
-			return true;
-		} else {
-			return false;
-		}
-		// return random.nextBoolean(); -> 50/50 - true/false 
-=======
-		// return random.nextBoolean(); -> 50/50 - true/false
+//<<<<<<< HEAD
+//		if (Math.random() < 0.5) {
+//			return true;
+//		} else {
+//			return false;
+//		}
+//		// return random.nextBoolean(); -> 50/50 - true/false 
+//=======
+//		// return random.nextBoolean(); -> 50/50 - true/false
 		return Math.random() < 0.5;
->>>>>>> branch 'master' of https://github.com/AndriS77/MyProject.git
+//>>>>>>> branch 'master' of https://github.com/AndriS77/MyProject.git
 	}
 
 	// Meetod, mis annab massiivi/listi inimeste nimedest. Parameetrina anda
