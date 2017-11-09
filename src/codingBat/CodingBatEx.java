@@ -15,7 +15,7 @@ public class CodingBatEx {
 	public boolean sameEnds(int[] nums, int len) {
 		int[] beg = subArray(nums, 0, len);
 		int[] end = subArray(nums, nums.length - len, nums.length);
-		System.out.println("Algus " + Arrays.toString(beg) );
+		System.out.println("Algus  " + Arrays.toString(beg) );
 		System.out.println("Lõpp " + Arrays.toString(end));
 		
 		return Arrays.equals(beg, end);
