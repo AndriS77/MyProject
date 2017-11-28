@@ -79,5 +79,4 @@ public class Kontrolltoo1 {
 		string[string.length - 1] = first;
 		return string;
 	}
-
 }
