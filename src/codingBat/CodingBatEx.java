@@ -1,8 +1,10 @@
 package codingBat;
 
 import java.util.List;
+import java.util.Map;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class CodingBatEx {
 
@@ -11,10 +13,9 @@ public class CodingBatEx {
 
 		int[] intArray = { 7, 6, 45, 99, 13, 7, 6 };
 		List<Integer> listInts = new ArrayList<>();
-		listInts.add(3);
-		listInts.add(6);
-		listInts.add(4);
-		listInts.add(5);
+		listInts.add(73);
+		listInts.add(19);
+		listInts.add(26);
 
 		List<String> listStrings = new ArrayList<>();
 		listStrings.add("öö");
@@ -22,6 +23,9 @@ public class CodingBatEx {
 		listStrings.add("ahv");
 		listStrings.add("uks");
 		listStrings.add("ahvena");
+		
+		Map<String, String> mingiMap = new HashMap<>();
+		mingiMap.put("a", "cake");
 
 		String[] stringArray = { "öö", "tahvel", "ahv", "uks", "ahvenad" };
 
@@ -47,6 +51,12 @@ public class CodingBatEx {
 		System.out.println("Massiivis on viis: " + cbe.arrayHas5(intArray));
 		System.out.println("Listis on viis: " + cbe.listHas5(listInts));
 		System.out.println("Massiivis on sõna, mis algab " + cbe.startsWithGivenLetter(stringArray, 'a' ));
+		System.out.println("b varastab a " + cbe.mapBully(mingiMap));
+	}
+
+	private String mapBully(String string, String string2) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	public boolean sameEnds(int[] nums, int len) {
@@ -162,7 +172,7 @@ public class CodingBatEx {
 	}
 
 	//Tagastada tõeväärtus (boolean – true/false), kas massiivis on mõni parameetriga etteantud tähega algav sõna.
-	
+ 	
 	public boolean startsWithGivenLetter(String[] str, char chr) {
 		
 		for (int i = 0; i < str.length; i++) {
@@ -173,5 +183,15 @@ public class CodingBatEx {
 		}
 		return false;
 	}
+	
+	public Map<String, String> mapBully(Map<String, String> map) {
+		  if (map.containsKey("a")) {
+		  map.put("b", map.get("a"));
+		  map.put("a", "");
+		  }
+		  return map;
+		}
 
-}
+		  
+	}
+
