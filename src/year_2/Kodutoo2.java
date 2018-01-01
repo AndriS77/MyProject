@@ -24,7 +24,7 @@ public class Kodutoo2 {
 		System.out.println(AValue(persons));
 		
 		}
-		//Ül 1
+		//Ül 1:
 		public static Map<Integer,String> lowestKeyValue(Map<Integer,String> map, int key){
 			List<Integer> keys = new ArrayList<>();
 			map.forEach((k,v)->{
