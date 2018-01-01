@@ -17,7 +17,7 @@ public class Kodutoo2 {
 		
 		HashMap<Integer, String> persons = new HashMap<>();
 		persons.put(2, "Indrek");
-		persons.put(17, "Kalmer");
+		persons.put(17, "Ander");
 		persons.put(3, "Mati");
 		
 		System.out.println(lowestKeyValue(persons, 5));
@@ -39,6 +39,7 @@ public class Kodutoo2 {
 		public static Map<Integer,String>AValue( HashMap<Integer,String>map){
 	    for (Iterator it = map.values().iterator(); it.hasNext();) {
 	        Object value = it.next();
+	      //  if(Map.containsValue())
 	    }return map;
 		}
 }
