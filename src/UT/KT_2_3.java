@@ -15,10 +15,12 @@ public class KT_2_3 {
 		Double P = scanner.nextDouble();
 		
 		Double K,T;
-		K = (S * (P/100/12)) / (1 - (1 + (P/100/12)) + (-Y*12));
+		K = (S * (P/100/12)) / (1 - Math.pow(1 + (P/100/12),-Y*12));
 		T = K * Y * 12;
 		
 		System.out.printf("Laenusummaga %.2f eurot %.2f intressim‰‰raga te peate maksma %.2f eurot kuus %.2f aastat. Ja kokku maksate pangale %.2f eurot.",S,P,K,Y,T);
+		
+		scanner.close();
 	}
 
 }
