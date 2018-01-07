@@ -12,36 +12,39 @@ import java.util.Set;
 public class Kodutoo2 {
 
 	public static void main(String[] args) {
-		
+
 		Kodutoo2 kt = new Kodutoo2();
-		
+
 		HashMap<Integer, String> persons = new HashMap<>();
 		persons.put(2, "Indrek");
 		persons.put(17, "Ander");
 		persons.put(3, "Mati");
-		
-		System.out.println(lowestKeyValue(persons, 5));
-		System.out.println(AValue(persons));
-		
-		}
-		//Ül 1:
-		public static Map<Integer,String> lowestKeyValue(Map<Integer,String> map, int key){
-			List<Integer> keys = new ArrayList<>();
-			map.forEach((k,v)->{
-				keys.add(k);});
-			int lowest = Collections.min(keys);
-			map.put(key,map.get(lowest));
-			map.remove(lowest);
-			return map;
+
+		System.out.println(lowestKeyValue(persons, "Jüri"));
+		System.out.println(kt.ChangeValue(persons, 'A', 6, "Jaan"));
+
+	}
+
+	// Ül 1:
+	public static Map<Integer, String> lowestKeyValue(Map<Integer, String> map, String newValie) {
+		List<Integer> keys = new ArrayList<>();
+		map.forEach((k, v) -> {
+			keys.add(k);
+		});
+		map.put(Collections.min(keys), newValie);
+		return map;
+	}
+
+	// Ül 2:
+	public static Map<Integer, String> ChangeValue(HashMap<Integer, String> map,Character letter,int length,String newValue) {
+		/*for (Iterator it = map.values().iterator(); it.hasNext();) {
+			Object value = it.next();
+			// if(Map.containsValue(str.s))*/
+		map.forEach((k,v)->{
+			if(v.length() < length && v.startsWith(letter.toString())){
+				map.put(k, newValue);
 			}
-
-		//Ül 2:
-		public static Map<Integer,String>AValue( HashMap<Integer,String>map){
-	    for (Iterator it = map.values().iterator(); it.hasNext();) {
-	        Object value = it.next();
-	      //  if(Map.containsValue())
-	    }return map;
-		}
+		});
+		return map;
+	}
 }
-	
-
