@@ -21,7 +21,7 @@ public class Kodutoo2 {
 		persons.put(3, "Mati");
 
 		System.out.println(lowestKeyValue(persons, "Jüri"));
-		System.out.println(kt.ChangeValue(persons, 'A', 6, "Jaan"));
+		System.out.println(ChangeValue(persons, 'A', 6, "Jaan"));
 
 	}
 
@@ -36,12 +36,10 @@ public class Kodutoo2 {
 	}
 
 	// Ül 2:
-	public static Map<Integer, String> ChangeValue(HashMap<Integer, String> map,Character letter,int length,String newValue) {
-		/*for (Iterator it = map.values().iterator(); it.hasNext();) {
-			Object value = it.next();
-			// if(Map.containsValue(str.s))*/
-		map.forEach((k,v)->{
-			if(v.length() < length && v.startsWith(letter.toString())){
+	public static Map<Integer, String> ChangeValue(HashMap<Integer, String> map, Character letter, int length,
+			String newValue) {
+		map.forEach((k, v) -> {
+			if (v.length() < length && v.startsWith(letter.toString())) {
 				map.put(k, newValue);
 			}
 		});
