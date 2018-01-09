@@ -22,6 +22,11 @@ public class Kodutoo2 {
 
 		System.out.println(lowestKeyValue(persons, "Jüri"));
 		System.out.println(ChangeValue(persons, 'A', 6, "Jaan"));
+		
+	//	private static lowestKey(){
+		for (Integer key : persons.keySet()) {
+			System.out.println(key);
+		}
 
 	}
 
