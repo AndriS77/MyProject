@@ -9,7 +9,6 @@ import java.util.Map;
 public class MapEx {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		MapEx me = new MapEx();
 		Map<String, Integer> map1 = new HashMap<String, Integer>();
 		map1.put("Valdur", 65);
