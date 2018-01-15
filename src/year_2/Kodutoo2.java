@@ -16,17 +16,13 @@ public class Kodutoo2 {
 		Kodutoo2 kt = new Kodutoo2();
 
 		HashMap<Integer, String> persons = new HashMap<>();
-		persons.put(2, "Indrek");
+		persons.put(5, "Indrek");
 		persons.put(17, "Ander");
 		persons.put(3, "Mati");
 
 		System.out.println(lowestKeyValue(persons, "Jüri"));
 		System.out.println(ChangeValue(persons, 'A', 6, "Jaan"));
 		
-	//	private static lowestKey(){
-		for (Integer key : persons.keySet()) {
-			System.out.println(key);
-		}
 
 	}
 
