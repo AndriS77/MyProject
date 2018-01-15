@@ -51,7 +51,7 @@ public class CodingBatEx {
 		System.out.println("Massiivis on viis: " + cbe.arrayHas5(intArray));
 		System.out.println("Listis on viis: " + cbe.listHas5(listInts));
 		System.out.println("Massiivis on sõna, mis algab " + cbe.startsWithGivenLetter(stringArray, 'a' ));
-		System.out.println("b varastab a " + cbe.mapBully(mingiMap));   
+		System.out.println("b varastab a " + cbe.mapBully(mingiMap));    
 	}
 
 	private String mapBully(String string, String string2) {
