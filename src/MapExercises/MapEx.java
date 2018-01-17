@@ -58,7 +58,7 @@ public class MapEx {
 		int[] keys = new int[map.size()];
 		int index = 0;
 		for (Map.Entry<String, Integer> entry : map.entrySet()) {
-			Integer value = entry.getValue();
+			Integer value = entry.getValue(); 
 			if (value > 30) {
 				keys[index] = value;
 

@@ -34,7 +34,7 @@ public class Kodutoo2 {
 		});
 		map.put(Collections.min(keys), newValie);
 		return map;
-	}
+	} 
 
 	// Ül 2:
 	public static Map<Integer, String> ChangeValue(HashMap<Integer, String> map, Character letter, int length,

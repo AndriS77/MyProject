@@ -52,7 +52,7 @@ public class MapDemo {
 		}
 		System.out.println("______________________");
 		//Mapi kıik v‰‰rtused
-		System.out.println("Mapi kıik v‰‰rtused: " + demoMap.values()); 
+		System.out.println("Mapi kıik v‰‰rtused: " + demoMap.values());  
 		}
 	 
 	
