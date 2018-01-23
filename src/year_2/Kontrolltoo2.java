@@ -20,13 +20,9 @@ public class Kontrolltoo2 {
 		map3.put("Mati", 479575490);
 		map3.put("Mari", 387569768);
 
-		Map<String, String> map = new HashMap<String, String>();
-		map.put("a", "b");
-		map.put("c", "d");
 
 		System.out.println(kt.startsWithA(map2));
 		System.out.println(Arrays.toString(kt.getMapValues(map2)));
-		System.out.println(kt.aBC(map));
 
 	}
 
@@ -62,23 +58,26 @@ public class Kontrolltoo2 {
 	}
 
 	// ül 2.
-	/*
-	 * public List<Integer> idNumber(Map<String, Integer> map) { List<Integer> keys
-	 * = new ArrayList<>(); for (Map.Entry<String, Integer> entry : map.entrySet())
-	 * { keys.add(entry.getKey().size()) }
+	
+	/* public Map<String,String> idNumber(Map<String, String> map) {
+		 Map<String,String> Numbs= new HashMap<>();		 
+	 for (String nums : map.keySet()) {
+		map.put(str.substring-4);
+	}
+	 return map;
+	 }
 	 */
-
 	// ül 4.
 	public Map<String, String> aBC(Map<String, String> map) {
 		if (map.containsKey("a") && map.containsKey("b")) {
-			if (map.containsKey("c")) {
-				map.remove("c");
-
-				map.put("d", map.get("c"));
-
+			if(map.containsKey("c")) {
+			map.remove("c");
+			}else{
+				//map.put("d");
 			}
-		}
 
+
+		}
 		return map;
 	}
 }
