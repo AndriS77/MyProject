@@ -11,17 +11,34 @@ public class KT_3_2 {
 		double X = scanner.nextDouble();
 		System.out.println("Sisestage planeet (merkuur, veenus, maa, marss, jupiter, saturn, uraan, neptuun): ");
 		String P = scanner.next();
-		
-		switch ("Planeet") {
+
+		switch (P) {
 		case "Merkuur":
-			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi",P,X*0.378);
-			
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.378);
+
 			break;
 		case "Veenus":
-			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi",P,X*0.907);
-
-		default:
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
 			break;
+		case "Maa":
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
+			break;
+		case "Marss":
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
+			break;
+		case "Jupiter":
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
+			break;
+		case "Saturn":
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
+			break;
+		case "Uraan":
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
+			break;
+		case "Neptuun":
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
+			break;
+
 		}
 	}
 
