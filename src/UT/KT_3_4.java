@@ -8,6 +8,11 @@ public class KT_3_4 {
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Sisestage x v‰‰rtus:");
+		int x = scanner.nextInt();
+		if (x < 0 ) {
+			System.out.println("Funktsiooni F v‰‰rtus kohal x on 0.");
+		
+			}
+		}
 	}
 
-}
