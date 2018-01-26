@@ -13,30 +13,29 @@ public class KT_3_2 {
 		String P = scanner.next();
 
 		switch (P) {
-		case "Merkuur":
+		case "merkuur":
 			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.378);
-
 			break;
-		case "Veenus":
+		case "veenus":
 			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
 			break;
-		case "Maa":
-			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
+		case "maa":
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 1.0);
 			break;
-		case "Marss":
-			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
+		case "marss":
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.377);
 			break;
-		case "Jupiter":
-			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
+		case "jupiter":
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 2.364);
 			break;
-		case "Saturn":
-			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
+		case "saturn":
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 1.064);
 			break;
-		case "Uraan":
-			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
+		case "uraan":
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.889);
 			break;
-		case "Neptuun":
-			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 0.907);
+		case "neptuun":
+			System.out.printf("Teie kaal planeedil %s oleks %.2f kilogrammi", P, X * 1.125);
 			break;
 
 		}
