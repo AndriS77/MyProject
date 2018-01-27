@@ -17,8 +17,10 @@ public class KT_3_4 {
 				v=(x* x);
 					System.out.println("Funktsiooni F v‰‰rtus kohal x on " + v);
 			}else {
-				System.out.printf("Funktsiooni F v‰‰rtus kohal x on %.0f.");
+				v=(3 * x + 51);
+				System.out.println("Funktsiooni F v‰‰rtus kohal x on " + v);
 			}
+		scanner.close();
 		}
 	}
 
