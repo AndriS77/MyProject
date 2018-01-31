@@ -28,16 +28,16 @@ public class Kontrolltoo2 {
 
 	// ül 1.
 	public List<String> startsWithA(Map<String, Integer> map) {
-		List<String> keys = new ArrayList<>();
+		ArrayList<String> result = new ArrayList<>();
 
-		for (Map.Entry<String, Integer> entry : map.entrySet()) {
-			if (entry.getKey().startsWith("A")) {
+		for (String key :map.keySet()) {
+			if (key.startsWith("A")) {
 
-				keys.add(entry.getKey());
+				result.add(key);
 			}
 
 		}
-		return keys;
+		return result;
 
 	}
 
@@ -59,14 +59,14 @@ public class Kontrolltoo2 {
 
 	// ül 2.
 	
-	/* public Map<String,String> idNumber(Map<String, String> map) {
-		 Map<String,String> Numbs= new HashMap<>();		 
-	 for (String nums : map.keySet()) {
-		map.put(str.substring-4);
+	 public static Map<String,String> birthday(List<String> idNumbers) {
+		 Map<String,String> nums= new HashMap<>();		 
+	 for (String numb : idNumbers) {
+		nums.put(numb,numb.substring(1,3));
 	}
-	 return map;
+	 return nums;
 	 }
-	 */
+	 
 	// ül 4.
 	public Map<String, String> aBC(Map<String, String> map) {
 		if (map.containsKey("a") && map.containsKey("b")) {

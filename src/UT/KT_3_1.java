@@ -8,9 +8,9 @@ public class KT_3_1 {
 
 		Scanner scanner = new Scanner(System.in);
 		double S1, S2;
-		System.out.println("Sisestage ringi raadius: ");
+		System.out.println("Sisestage ringi raadius:");
 		double R = scanner.nextDouble();
-		System.out.println("Sisestage ruudu külje pikkus: ");
+		System.out.println("Sisestage ruudu külje pikkus:");
 		double K = scanner.nextDouble();
 
 		S1 = Math.PI * (R * R);
