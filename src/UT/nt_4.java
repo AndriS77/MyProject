@@ -16,7 +16,7 @@ public class nt_4 {
 		    }
 		    System.out.printf("Tänan! Otsin suurimat väärtust ...\n");
 		    int max = jada[0];            /* alguses võtan suurimaks esimese väärtuse */
-		    for (int i = 1; i < n; i++) { /* kontrollin kõiki jadaliikmeid */
+		    for (int i = 1; i < n; i++) { /* kontrollin kõiki jadaliikmeid. */
 		      if (jada[i] > max) {        /* kas vaadeldav väärtus on eelmistest suurem */
 		        max = jada[i];            /* kui, on siis jätan meelde */
 		      }
