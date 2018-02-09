@@ -2,6 +2,7 @@ package nameGeneration;
 
 import java.util.Random;
 
+
 public class StartGenerator {
 	public static void main(String[] args) {
 		NameGenerator ng = new NameGenerator();
