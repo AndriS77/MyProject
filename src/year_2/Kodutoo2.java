@@ -20,7 +20,7 @@ public class Kodutoo2 {
 		persons.put(17, "Ander");
 		persons.put(3, "Mati");
 
-		System.out.println(lowestKeyValue(persons, "Jüri"));
+		System.out.println(lowestKeyValue(persons, "Siim"));
 		System.out.println(ChangeValue(persons, 'A', 6, "Jaan"));
 		
 
@@ -29,9 +29,12 @@ public class Kodutoo2 {
 	// Ül 1:
 	public static Map<Integer, String> lowestKeyValue(Map<Integer, String> map, String newValie) {
 		List<Integer> keys = new ArrayList<>();
-		map.forEach((k, v) -> {
+		/*map.forEach((k, v) -> {
 			keys.add(k);
-		});
+		});*/
+		for (Integer key : map.keySet()) {
+			keys.add(key);
+		}
 		map.put(Collections.min(keys), newValie);
 		return map;
 	} 
@@ -39,11 +42,15 @@ public class Kodutoo2 {
 	// Ül 2:
 	public static Map<Integer, String> ChangeValue(HashMap<Integer, String> map, Character letter, int length,
 			String newValue) {
-		map.forEach((k, v) -> {
+	/*	map.forEach((k, v) -> {
 			if (v.length() < length && v.startsWith(letter.toString())) {
 				map.put(k, newValue);
 			}
-		});
-		return map;
+		});*/
+		/*for (String value : map.values()) {
+			if (value.length() < length && value.startsWith(letter.toString())) {
+				map.put(value);
+		}*/
+			return map;
 	}
-}
+		}

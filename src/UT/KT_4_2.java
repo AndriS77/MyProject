@@ -9,10 +9,7 @@ public class KT_4_2 {
 	public static void main(String[] args) {
 		System.out.printf("Alustame mängu.\n");
 
-		// double N = (-1000 + Math.random() * 1000);
-
 		int N = ThreadLocalRandom.current().nextInt(-1000, 1000 + 1);
-		System.out.println(N);
 		Scanner scanner = new Scanner(System.in);
 
 		int counter = 11;
@@ -30,10 +27,11 @@ public class KT_4_2 {
 			} else {
 				System.out.printf("Peidetud arv on %d", N);
 				break;
-			} 		}
-		if (counter == 0) {
-			System.out.printf("Te kaotasite. Peidetud arv oli %d.",N);
+			}
 		}
-
+		if (counter == 0) {
+			System.out.printf("Te kaotasite. Peidetud arv oli %d.", N);
+		}
+		scanner.close();
 	}
 }
