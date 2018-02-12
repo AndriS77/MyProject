@@ -21,36 +21,38 @@ public class Kodutoo2 {
 		persons.put(3, "Mati");
 
 		System.out.println(lowestKeyValue(persons, "Siim"));
-		System.out.println(ChangeValue(persons, 'A', 6, "Jaan"));
-		
+		System.out.println(changeValue(persons, 'A', 6, "Jaan"));
 
 	}
 
 	// Ül 1:
 	public static Map<Integer, String> lowestKeyValue(Map<Integer, String> map, String newValie) {
 		List<Integer> keys = new ArrayList<>();
-		/*map.forEach((k, v) -> {
-			keys.add(k);
-		});*/
+		/*
+		 * map.forEach((k, v) -> { keys.add(k); });
+		 */
 		for (Integer key : map.keySet()) {
 			keys.add(key);
 		}
 		map.put(Collections.min(keys), newValie);
 		return map;
-	} 
+	}
 
 	// Ül 2:
-	public static Map<Integer, String> ChangeValue(HashMap<Integer, String> map, Character letter, int length,
+	public static Map<Integer, String> changeValue(HashMap<Integer, String> map, Character letter, int length,
 			String newValue) {
-	/*	map.forEach((k, v) -> {
-			if (v.length() < length && v.startsWith(letter.toString())) {
-				map.put(k, newValue);
+		// map.forEach((k, v) -> {
+		// if (v.length() < length && v.startsWith(letter.toString())) {
+		// map.put(k, newValue);
+		// }
+		// });
+
+		for (Map.Entry<Integer, String> entry : map.entrySet()) {
+			if (entry.getValue().length() < length && entry.getValue().startsWith(letter.toString())) {
+				map.put(entry.getKey(), newValue);
 			}
-		});*/
-		/*for (String value : map.values()) {
-			if (value.length() < length && value.startsWith(letter.toString())) {
-				map.put(value);
-		}*/
-			return map;
-	}
 		}
+
+		return map;
+	}
+}
