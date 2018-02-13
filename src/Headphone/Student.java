@@ -1,12 +1,16 @@
 package Headphone;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Student {
 
 	private String firstname;
 	private String lastname;
 	private int birthday;
 	private String subjects;
-
+	private List<String> names = new ArrayList<>();
+	//names.add("firstname","lastname");
 	public String getFirstname() {
 		return firstname;
 	}
