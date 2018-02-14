@@ -15,7 +15,7 @@ public class Student {
 	//= new ArrayList<>();
 	
 
-	public Student(String firstname, String lastname, List<String> subjects) {	
+	public Student(String firstname, String lastname, List<String> subjects) {	 
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.subjects = subjects;
