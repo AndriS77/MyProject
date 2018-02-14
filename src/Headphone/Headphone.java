@@ -1,18 +1,30 @@
 package Headphone;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Headphone {
 	//private fields
 	private String brand;
 	private double price;
 	private boolean isWired;
+	private List<String> specifications;
 	
+	// Constructor. Source -> Generate Constructor using Fields...p
+		public Headphone(String brand, double price, boolean isWired,List<String>specifications) {
+			this.brand = brand;
+			this.price = price;
+			this.isWired = isWired;
+			this.specifications=specifications;
+		} 
 
-	// Constructor. Source -> Generate Constructor using Fields...
+	// Constructor. Source -> Generate Constructor using Fields...p
 	public Headphone(String brand, double price, boolean isWired) {
 		this.brand = brand;
 		this.price = price;
 		this.isWired = isWired;
-	}
+		this.specifications=new ArrayList<>();
+	} 
 	
 	// Constructor
 	public Headphone(String brand) {
@@ -65,5 +77,8 @@ public class Headphone {
 	
 	public String isExpensiveString() {
 		return isExpensive() ? "kallis" : "odav"; 
+	}
+	public void addSpecification(String spec) {
+		this.specifications.add(spec);
 	}
 }
