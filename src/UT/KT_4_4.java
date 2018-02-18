@@ -2,6 +2,7 @@ package UT;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class KT_4_4 {
 
@@ -17,7 +18,7 @@ public class KT_4_4 {
 
 			int sum = 0;
 			for (int j = 0; j < 10; j++) {
-				int n = rand.nextInt(100);
+				int n =  ThreadLocalRandom.current().nextInt(1, 100);
 				randNum[i][j] = n;
 				sum += randNum[i][j];
 
@@ -49,7 +50,7 @@ public class KT_4_4 {
 					maxIndex = i + 1;
 				}
 			}
-			System.out.println(i + 1 + ". |" + looseCommas(tenXten, i) + "|" + sum);
+			System.out.println(i +1 + ". |" + " " + looseCommas(tenXten, i)+ "|" + sum);
 			
 		}
 		System.out.println("Elementide suurim summa on reas nr. " + maxIndex);
