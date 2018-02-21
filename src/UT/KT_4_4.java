@@ -30,7 +30,7 @@ public class KT_4_4 {
 	private String looseCommas(int[][] array, int index) {
 		StringBuilder builder = new StringBuilder();
 		for (int value : array[index]) {
-			builder.append(value + " ");
+			builder.append(value < 10 ? " " + value + " " : value + " ");
 		}
 		return builder.toString();
 	}
@@ -50,7 +50,7 @@ public class KT_4_4 {
 					maxIndex = i + 1;
 				}
 			}
-			System.out.println(i +1 + ". |" + " " + looseCommas(tenXten, i)+ "|" + sum);
+			System.out.println((i < 9 ? " " + (i + 1) : i + 1) + ". |" + " " + looseCommas(tenXten, i)+ "| " + sum);
 			
 		}
 		System.out.println("Elementide suurim summa on reas nr. " + maxIndex);
