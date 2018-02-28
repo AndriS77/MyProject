@@ -23,8 +23,9 @@ public class App {
 		Student student1 = new Student("Tom", "Saar", new ArrayList<>(Arrays.asList("Keemia","Matemaatika")));
 		System.out.println(student1);
 		
-		Student student2 = new Student("Tom", "Saar", new GregorianCalendar(2013,1,28));
+		Student student2 = new Student("Tom", "Saar", new GregorianCalendar(2013,1,28), Type.ESMAKURSULANE);
 		System.out.println(student2);
+		
 		
 		
 		List<String>specs=new ArrayList(Arrays.asList("mikrofon","mürasummutaja"));

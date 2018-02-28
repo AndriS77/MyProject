@@ -2,6 +2,7 @@
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
@@ -10,28 +11,27 @@ public class Student {
 	private String firstname;
 	private String lastname;
 	private Calendar birthdate;
-	//private String subjects;
 	private List<String> subjects;
-	//= new ArrayList<>();
-	
+	private Type type;
 
 	public Student(String firstname, String lastname, List<String> subjects) {	 
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.subjects = subjects;
+		this.type = Type.TUDENG;
 	}
 
 
-
-	public Student(String firstname, String lastname, Calendar birthdate) {
+	public Student(String firstname, String lastname, GregorianCalendar birthdate, Type type) {
 		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.birthdate = birthdate;
+		this.type = type;
+
 	}
 
 
-	
 	public String getFirstname() {
 		return firstname;
 	}
@@ -72,6 +72,7 @@ public class Student {
 	public String toString() {
 		return "Student [" + (firstname != null ? "firstname=" + firstname + ", " : "")
 				+ (lastname != null ? "lastname=" + lastname + ", " : "") + "birthday=" + birthdate + ", "
-				+ (subjects != null ? "subjects=" + subjects : "") + "]";
+				+ (subjects != null ? "subjects=" + subjects : "")
+				+ ", type=" + type + "]";
 	}
  }
