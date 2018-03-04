@@ -1,0 +1,16 @@
+The Design and Evolution of C++#1994#461#Bjarne Stroustrup#eng#9
+Effective Java#2008#346#Joshua Bloch#eng#7
+Valge Snaiper#2018#216#A.M.Saarelainen#est#7
+Kasuema#2018#216#S.Rannamaa#est#6
+Sajandi kokaraamat 1918-2018#2017#224#Angelika Udeküll#est#8
+Serafirma ja Bogdan#2017#560#Vahur Afanasjev#est#6
+Tumedam#2018#548#est#E.L.James#est#5
+Origin#2017#199#Dan Brown#est#7
+Hull hobune#2018#232#Katrin Pauts#est#6
+Dumplin#2018#208#Julie Murphy#est#6
+Aiandus ja mesindus#1979##140#Mati Kaer#est#6
+Häkkimine võhikule#2008#388#Kevin Beaver#est#8
+Õpime üheskoos programeerima#2015#224#Carol Vordeman#est#9
+Programmeerimine lapsevanematele#2018#208#Frazer Wilson#est#7
+Arvutitehnika riistvara#2015#360#Teet Evartson#est#8
+Andmestruktuuride lühikursus#1996#188#Rein Jürgenson#est#7
