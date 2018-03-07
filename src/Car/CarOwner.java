@@ -14,5 +14,8 @@ public class CarOwner {
 		Period p = Period.between(licenseDate, today);
 		return p;
 	}
+	public enum Country {
+		EST, FIN, LV;
+	}
 }
 

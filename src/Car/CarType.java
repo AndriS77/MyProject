@@ -1,5 +1,5 @@
 package Car;
 
 public enum CarType {
-	SEDAAN, LUUKPÄRA, UNIVERSAAL;
+	SEDAAN, LUUKPÃ„RA, UNIVERSAAL;
 }

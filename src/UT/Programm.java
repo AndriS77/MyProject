@@ -35,16 +35,19 @@ public class Programm {
 		
 		while (scanner.hasNext()) {
 			String line = scanner.nextLine();
-			//System.out.println(line);
-			list.add(getRaamat(line));
+			String[] bookInfo = line.split("#");
+			list.add(new Raamat(bookInfo[0],bookInfo[1],bookInfo[2],bookInfo[3],bookInfo[4],bookInfo[5]));			//list.add(getRaamat(line));
 			
-			System.out.println(list);
 		}
+		int page =0;
+		int pageCounter=0;
+		for (int i = 0; i <list.size(); i++) {
+			String pages = scanner.nextLine();
+		}
+		
+		
 	}
 
-	private static Raamat getRaamat(String line) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 
 }
