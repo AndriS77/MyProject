@@ -39,15 +39,29 @@ public class Programm {
 			list.add(new Raamat(bookInfo[0],bookInfo[1],bookInfo[2],bookInfo[3],bookInfo[4],bookInfo[5]));			//list.add(getRaamat(line));
 			
 		}
-		int page =0;
-		int pageCounter=0;
-		for (int i = 0; i <list.size(); i++) {
-			String pages = scanner.nextLine();
+		List<String>pages = new ArrayList<>();
+		String page ="";
+		for (int i = 1; i <list.size()+1; i++) {
+			page += i + ". " + list.get(i-1) + "\n";
+			
+			if (i % 5 == 0 || i == list.size()) {
+				pages.add(page);
+				page ="";
+			
+			}}
+		int pageNumber =0;
+	//	System.out.println(pages.get(1));
+		Scanner inputScanner = new Scanner(System.in);
+		String key = "";
+		while(key != "v") {
+			if(key.equals("j") && pageNumber < pages.size()-1) {
+				pageNumber++;
+			} else if (key.equals("e") && pageNumber > 0 ) {
+				pageNumber--;
+			}
+			System.out.println(pages.get(pageNumber));
+			key = inputScanner.nextLine();
 		}
 		
-		
 	}
-
-
-
-}
+		}
