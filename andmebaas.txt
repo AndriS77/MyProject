@@ -14,3 +14,5 @@ Häkkimine võhikule#2008#388#Kevin Beaver#est#8
 Programmeerimine lapsevanematele#2018#208#Frazer Wilson#est#7
 Arvutitehnika riistvara#2015#360#Teet Evartson#est#8
 Andmestruktuuride lühikursus#1996#188#Rein Jürgenson#est#7
+Rehepapp#1994#213#Andrus Kivirähk#Eesti#8
+Matemaatika õhtuõpik#2016#408#Juhan Aru#Eesti#9
