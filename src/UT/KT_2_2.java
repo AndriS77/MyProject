@@ -16,7 +16,7 @@ public class KT_2_2 {
 			N = (B * (1 - 0.016 - 0.02) - 180) * (1 - 0.20) + 180;
 
 			System.out.printf(
-					"Kui töötaja brutopalk on %.3f eurot, siis tööandja maksab %.3f eurot ja töötaja saab kätte puhtalt %.3f eurot.",
+					"Kui tï¿½ï¿½taja brutopalk on %.3f eurot, siis tï¿½ï¿½andja maksab %.3f eurot ja tï¿½ï¿½taja saab kï¿½tte puhtalt %.3f eurot.",
 					B, T, N);
 		} else {
 			System.out.println("Miinimumpalk on 470 eurot");
