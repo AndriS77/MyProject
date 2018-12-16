@@ -1,5 +1,5 @@
 package Car;
 
-public enum CarType {
+public enum Liik {
 	SEDAAN, LUUKPARA, UNIVERSAAL;
 }
