@@ -1,12 +1,13 @@
 package loomad;
 
+import java.time.LocalDate;
 import java.util.Calendar;
 
 public class Kass extends Loom {
 	
 	private Loomapass loomapass;
 
-	public Kass(String nimi, String toug, Calendar sunniaeg, Loomapass loomapass) {
+	public Kass(String nimi, String toug, LocalDate sunniaeg, Loomapass loomapass) {
 		super(nimi, toug, sunniaeg);
 		this.loomapass = loomapass;
 	}

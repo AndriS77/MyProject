@@ -1,5 +1,6 @@
 package loomad;
 
+import java.time.LocalDate;
 import java.util.Calendar;
 
 public class Loomapass {
@@ -7,9 +8,9 @@ public class Loomapass {
 	private String nimi;
 	private String toug;
 	private String omanik;
-	private Calendar sunnipaev;
+	private LocalDate sunnipaev;
 	
-	public Loomapass(String nimi, String toug, String omanik, Calendar sunnipaev) {
+	public Loomapass(String nimi, String toug, String omanik, LocalDate sunnipaev) {
 		this.nimi = nimi;
 		this.toug = toug;
 		this.omanik = omanik;
@@ -62,14 +63,14 @@ public class Loomapass {
 	/**
 	 * @return the sunnipaev
 	 */
-	public Calendar getSunnipaev() {
+	public LocalDate getSunnipaev() {
 		return sunnipaev;
 	}
 
 	/**
 	 * @param sunnipaev the sunnipaev to set
 	 */
-	public void setSunnipaev(Calendar sunnipaev) {
+	public void setSunnipaev(LocalDate sunnipaev) {
 		this.sunnipaev = sunnipaev;
 	}
 

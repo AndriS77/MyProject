@@ -1,12 +1,13 @@
 package loomad;
 
+import java.time.LocalDate;
 import java.util.Calendar;
 
 public class Koer extends Loom{
 
 	private String varvus;
 
-	public Koer(String nimi, String toug, Calendar sunniaeg, String varvus) {
+	public Koer(String nimi, String toug, LocalDate sunniaeg, String varvus) {
 		super(nimi, toug, sunniaeg);
 		this.varvus = varvus;
 	}
